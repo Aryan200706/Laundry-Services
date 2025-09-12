@@ -96,21 +96,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalAmount = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
         // Send email via EmailJS
-        emailjs.send("service_2uiagsl", "template_7gjqfif", {
-            to_name: bookForm.name.value,
-            to_email: bookForm.email.value,
-            phone: bookForm.phone.value,
-            order: orderDetails,
-            total: `$${totalAmount}`
-        }, "cROPiOn2t9r5DKtE1")
-        .then(() => {
-            thankYouMsg.style.display = "block";
-            bookForm.reset();
-            cart = [];
-            renderCart();
-        })
-        .catch((error) => {
-            alert("Failed to send confirmation email: " + JSON.stringify(error));
-        });
+       emailjs.send("service_2uiagsl", "template_7gjqfif", {
+    to_name: bookForm.name.value,
+    to_email: bookForm.email.value,
+    phone: bookForm.phone.value,
+    order: orderDetails,
+    total: `$${totalAmount}`
+})
+.then(() => {
+    thankYouMsg.style.display = "block";
+    bookForm.reset();
+    cart = [];
+    renderCart();
+})
+.catch((error) => {
+    alert("Failed to send confirmation email: " + JSON.stringify(error));
+});
+
     });
 });
+
