@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Servies</title>
+    <meta name="description" content="Laundry Services - Your one-stop solution for all laundry needs. We offer professional washing, drying, and folding services to keep your clothes fresh and clean.">
+    <meta name="keywords" content="laundry, washing, drying, folding, laundry services, clean clothes, professional laundry">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Titan+One&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/resources/css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("cROPiOn2t9r5DKtE1"); // your public key
+    })();
+</script>
+<script src="script.js"></script>
+
+
+</head>
+<body>
+
+ <header class="header"> 
+    <div class="contaier">
+    <nav class="navbar">
+        <img class="logo" id="logo" src="logo.jpeg" alt="LOGO">
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+
+        <h2 class="user">Username</h2>
+    </nav>
+    </div> 
+ </header>
+
+ <main>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero">
+                <div class="left">
+                    <h1>Reviatalizing Your Clothes <br>With Expert <h1 id="b">Laundry Services!</h1></h1>
+                    <p>From premium dry cleaning to swift wash and fold, we deliver care and convinence. Schedule a pickup and rediscover the freshness of your clothes</p>
+
+                    <a class="hero-btn" href="#services">Book Services</a>
+
+                    
+                        
+
+
+                </div>
+
+                <div class="right">
+                    <img src="laundry.jpeg" alt="Laundry Services">
+
+                </div>
+
+
+
+            </div>
+        
+         
+        </div>
+
+    </section>
+    
+
+     <div class="achievements">
+     <div class="aitem">
+      <h2>Our Achievements</h2>
+     </div>
+     <div class="aitem">
+      <h2>15+</h2>
+      <p>Laundry Services</p>
+     </div>
+     <div class="aitem">
+      <h2>240+</h2>
+      <p>Happy Customers</p>
+     </div>
+     <div class="aitem">
+      <h2>2+</h2>
+      <p>Years of Experience</p>
+     </div>
+     </div>
+
+   <section class="services" id="services">
+        <div class="sleft">
+            <h2>Our Services</h2>
+            <p>Click On Add To Cart Button To Add The Services To Your Cart</p>
+            <hr>
+            <div class="choices">
+                <div class="bitems">
+                    <h3>Dry Cleaning </h3> 
+                    <p>$10</p>
+                    <button id="add">Add</button>  
+                </div>
+                <div class="bitems">
+                    <h3>Wash & Fold  </h3> 
+                    <p>$8</p>
+                    <button id="add">Add</button>  
+                </div>
+                <div class="bitems">
+                    <h3>Ironing  </h3> 
+                    <p>$5</p>
+                    <button id="add">Add</button>  
+                </div>
+                <div class="bitems">
+                    <h3>Stain Removal</h3> 
+                    <p>$12</p>
+                    <button id="add">Add</button> 
+                 </div>
+                <div class="bitems">
+                    <h3>Leather & Suede Cleaning</h3> 
+                    <p>$15</p>
+                    <button id="add">Add</button>
+                </div>    
+                <div class="bitems">
+                    <h3>Wedding Dress Cleaning</h3> 
+                    <p>$20</p>
+                    <button id="add">Add</button>
+                </div>
+                
+            </div>
+            <hr>
+
+            <p>Add the items to the cart and book now</p>
+
+            
+
+        </div>
+
+
+        <div class="sright">
+            <div class="sitems">
+    <h2>Added Items</h2>
+    <hr>
+    <table class="stable">
+        <tr>
+            <td>S.No</td>
+            <td>Service Name</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+        </tr>
+    </table>
+
+    <hr>
+    <div class="total">
+        <h3>Total Amount:</h3>
+        <p>$0</p>
+    </div>
+</div>
+
+
+            <div class="booknow">
+                <h2>Book Now</h2>
+                <hr>
+                <div class="bookform">
+                    <div class="fitems">
+                     <form class="bf" action="">
+                         <label for="name">Name :</label>
+                         <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                         <label for="email">Email :</label>
+                         <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                         <label for="phone">Tel :</label>
+                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone no." required>
+
+                        <button type="submit" class="bbtn">Book Now</button>
+<p id="thankyou-message" style="display:none; color: green; font-weight: bold; margin-top: 10px;">
+    Thank you for Booking the Service. We will get back to you soon!
+</p>
+
+
+
+
+                     </form>
+                    </div>
+                   
+                   
+                </div>
+            </div>
+     
+    </div>
+   </section>
+
+   <section class="about" id="about">
+    <div class="aboutus">
+        <div class="ainfo">
+            <img src="laundry.gif" alt="laundry" loop="true">
+            <h2>Premium Services</h2>
+            <p>Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new<p>
+        </div>
+        <div class="ainfo">
+            <img src="tech-support.gif" alt="custom care" loop="true">
+            <h2>Quick Support</h2>
+            <p>We're committed to provide promt solutions to ensure your experience is soomth and hassle-free</p>
+        </div>
+        <div class="ainfo">
+            <img src="truck.gif" alt="Delivery" loop="true">
+            <h2>Hassle Free Delivery</h2>
+            <p>Enjoy seamless servic with our pickup and delivery options, tailored to your schedule. </p>
+        </div>
+        <div class="ainfo">
+            <img src="save-money.gif" alt="Price" loop="true">
+            <h2>Affordable Prices</h2>
+            <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day stress-free</p>
+        </div>
+        
+    </div>
+   </section>
+
+   <section class="newsletter" id="contact">
+    <div class="nleft">
+        <h2>Subscribe to Our Newsletter.</h2>
+    </div>
+    <div class="nright">
+        <form action="">
+            <input type="text" name="nname" id="nname" placeholder="Enter your name" required>
+            <input type="email" name="nemail" id="nemail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+   </section>
+
+ </main>
+
+ <footer class="footer" id="footer">
+    <div class="foot">
+        <div class="logoi">
+            <img class="logo" id="logo" src="logo.jpeg" alt="LOGO">
+            <h2><strong>Laundry Walah</strong></h2>
+        </div>
+        <div class="implinks">
+            <ul>
+                <li><h3><strong>Important Links</strong></h3></li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Condition</li>
+                <li>Refund Policy<li>
+            </ul>
+
+        </div>
+        <div class="contus">
+            <h3><strong>Contact Us</strong></h3>
+            <p>mail123@laundrywalah</p>
+            <p>+91 9846546XXX</p>
+
+        </div>    
+        <div class="smedia">
+            <h3><strong>Follow Us</strong></h3>
+            <ul>
+                <li><img id="social" src="instagram.png" alt="Instagram"></li>
+                <li><img id="social" src="facebook.png" alt="Facebook"></li>
+                <li><img id="social" src="twitter-alt-square.png" alt="X"></li>
+            </ul>
+        </div>    
+
+    
+ </footer>
+   
+</body>
+</html>
