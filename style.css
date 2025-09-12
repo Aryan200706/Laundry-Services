@@ -327,6 +327,12 @@ table th, table td {
     background-color: #027fbd;
     transform: scale(1.05);
 }
+#thankyou-message{
+display:none;
+color: green;
+font-weight: bold;
+margin-top: 10px;
+}
 
 
 
@@ -477,5 +483,6 @@ table th, table td {
   .nav-links { display: none; }
   .aboutus { grid-template-columns: 1fr; }
 }
+
 
 
