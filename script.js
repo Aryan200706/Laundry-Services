@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", () => {
     const addButtons = document.querySelectorAll("#add"); 
     const cartTable = document.querySelector(".stable");
@@ -28,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Render cart
+    
     function renderCart() {
         cartTable.innerHTML = `
             <tr>
@@ -83,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Handle Book Now
+    // Book Now
     bookForm.addEventListener("submit", (e) => {
         e.preventDefault();
 
@@ -95,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const orderDetails = cart.map(item => `${item.name} (x${item.qty}) - $${item.price * item.qty}`).join(", ");
         const totalAmount = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-        // Send email via EmailJS
+        // EmailJS
 emailjs.send("service_2uiagsl", "template_7gjqfif", {
     to_name: bookForm.name.value,
     to_email: bookForm.email.value,
@@ -117,5 +115,6 @@ emailjs.send("service_2uiagsl", "template_7gjqfif", {
 
     });
 });
+
 
 
