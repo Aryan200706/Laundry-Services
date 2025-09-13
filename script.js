@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     const itemContainers = document.querySelectorAll(".bitems");
     const cartTable = document.querySelector(".stable");
